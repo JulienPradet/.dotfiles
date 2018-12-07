@@ -24,7 +24,6 @@ docker run -d --restart always --name traefik --net traefik --ip 172.10.0.10 -v 
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 cp ~/.dotfiles/.zshrc ~/.zshrc
-source ~/.zshrc
 
 timedatectl set-ntp true 
 timedatectl set-timezome Europe/Paris
@@ -33,3 +32,8 @@ cp ~/.dotfiles/.Xresources ~/.Xresources
 xrdb ~/.Xresources
 
 cp ~/.dotfiles/i3config ~/.i3/config
+sed -i -e 's/userapp-Pale Moon/google-chrome/g' ~/.config/mimeapps.list
+cp ~/.dotfiles/.profile ~/.profile
+
+i3-msg restart
+source ~/.zshrc
