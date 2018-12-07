@@ -1,3 +1,5 @@
+alias copy=xclip -selection c
+
 alias dc=docker-compose
 
 dcrefresh() {
