@@ -32,7 +32,7 @@ cp ~/.dotfiles/.Xresources ~/.Xresources
 xrdb ~/.Xresources
 
 cp ~/.dotfiles/i3config ~/.i3/config
-sed -i -e 's/userapp-Pale Moon/google-chrome/g' ~/.config/mimeapps.list
+sed -i -e 's/userapp-Pale Moon/firefox/g' ~/.config/mimeapps.list
 cp ~/.dotfiles/.profile ~/.profile
 
 i3-msg restart
