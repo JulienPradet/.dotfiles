@@ -4,7 +4,8 @@ sudo echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 rmmod pcspkr
 
 pamac update
-pamac install thunderbird code docker docker-compose unbound ansible tk
+pamac install thunderbird code docker docker-compose unbound ansible tk pavucontrol pulseaudio-bluetooth
+killall pulseaudio
 pamac build google-chrome slack-desktop spotify gitflow-avh
 pamac remove dnsmasq
 
